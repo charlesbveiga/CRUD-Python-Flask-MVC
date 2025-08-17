@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Adicionar Carro</h1>
+<table class="table">
+    <form method="POST">
+        <div class="form-group">
+            <label>Marca:</label>
+            <input type="text" name="marca" required><br>
+        </div> <br>
+        <div class="form-group">
+            <label>Modelo:</label>
+            <input type="text" name="modelo" required><br>
+        </div> <br>
+        <div class="form-group">
+            <label>Ano:</label>
+            <input type="number" name="ano" required><br>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Cadastrar Carro</button>
+    </form>
+</table>
+{% endblock %}

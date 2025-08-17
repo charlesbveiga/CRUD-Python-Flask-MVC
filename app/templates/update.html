@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Atualizar Carro</h1>
+<table class="table">
+    <form method="POST">
+        <div class="form-group"></div>
+        <label for="marca">Marca:</label>
+        <input type="text" class="form-control" id="marca" name="marca" value="{{ carro.marca }}" required><br>
+        </div> <br>
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" value="{{ carro.modelo }}" required><br>
+        </div> <br>
+        <div class="form-group">
+            <label for="ano">Ano:</label>
+            <input type="text" class="form-control" id="ano" name="ano" value="{{ carro.ano }}">
+        </div><br>
+        <button type="submit" class="btn btn-primary">Atualizar Carro</button>
+    </form>
+</table>
+{% endblock %}
