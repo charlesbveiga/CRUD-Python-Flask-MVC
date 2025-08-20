@@ -1,24 +1,71 @@
-##CRUD Python - Flask - MVC
+## CRUD Python - Flask - MVC
 
-####Projeto de um formulário de cadastro, consulta, edição e remoção de carros, basedado em Python - Flask, usando uma conexão com banco de dados Mysql.
+Projeto de um formulário de cadastro, consulta, edição e remoção de carros, baseado em Python - Flask, usando uma conexão com banco de dados Mysql.
 
-##Comandos Básicos do Projeto
+Este Projeto CRUD, é parte de um segundo projeto, que é uma API, e utilizam o mesmo banco de dados mysql. 
 
-##Criar ambiente
-python3 -m venv venv
+Poderiam estar juntos, como um projeto somente, mas para fins didáticos e de boas práticas, ficam separados, para melhor observação de sua arquitetura, boas práticas e de sua evolução.
 
-##ativar ambiente Linux MacOs
-source ./venv/bin/activate
+## Comandos Básicos do Projeto
 
-##ativar ambiente Windows
-myenv\Scripts\activate
+#### Você deve ter instalado em seu ambiente o Mysql
 
-##instalar dependências
-pip3 install -r requirements.txt
 
-##rodar
-python3 run.py
+#### Instale o mysql:
 
-####fonte: 
+    sudo apt install mysql-server -y
+
+Inicia mysql
+
+    sudo systemctl start mysql
+    
+    sudo systemctl enable mysql  
+    
+Acesse o MySQL como root (sem senha, na primeira vez):
+
+    sudo mysql  
+
+Dentro do prompt do MySQL, defina a senha do usuário root como cbv123:
+
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'cbv123';  
+    
+Atualize os Privilegios
+
+    FLUSH PRIVILEGES;  
+    
+Crie o Banco carros
+
+    CREATE DATABASE carros;  
+    
+ Saia do Mysql
+
+    EXIT;  
+
+## Criar ambiente
+
+#### Criar ambiente
+
+    python3 -m venv venv
+
+#### Ativar ambiente Linux MacOs
+
+    source ./venv/bin/activate
+
+#### Ativar ambiente Windows
+
+    myenv\Scripts\activate
+
+#### Instalar dependências
+
+    pip3 install -r requirements.txt
+
+#### Rodar
+
+    python3 run.py
+
+
+#### Fonte:
+
 https://www.youtube.com/watch?v=vgPC7RZ5UJc
+
 https://www.youtube.com/watch?v=LP8besicfH4
