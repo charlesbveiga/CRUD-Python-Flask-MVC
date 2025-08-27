@@ -1,6 +1,8 @@
 ## CRUD Python - Flask - MVC
 
-Projeto de um formulário de cadastro, consulta, edição e remoção de carros, baseado em Python - Flask, usando uma conexão com banco de dados Mysql.
+Projeto de um formulário de cadastro, consulta, edição e remoção de carros, baseado em Python - Flask, usando uma conexão com banco de dados Mysql. 
+
+O projeto é baseado em paradigma orientado a objetos, sob a perspectiva SOLID, valorizando um conjunto de boas práticas na escrita de software, Clean Code, convenções como PEP 8 – Guia de Estilo para Código Python.
 
 Este Projeto CRUD, é parte de um segundo projeto, que é uma API, e utilizam o mesmo banco de dados mysql. 
 
@@ -69,3 +71,7 @@ Crie o Banco carros
 https://www.youtube.com/watch?v=vgPC7RZ5UJc
 
 https://www.youtube.com/watch?v=LP8besicfH4
+
+https://peps.python.org/pep-0008/
+
+https://drive.google.com/file/d/0B9eZlIWAs3-sN3NRbktQNVFUN3l2cTBBcXN4Y3FaUQ/view
